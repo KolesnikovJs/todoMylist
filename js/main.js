@@ -26,7 +26,12 @@ function getRandomId() {
 listButton.addEventListener('click', getCreateList);
 
 
+
+
+
+
 //Функции
+
 function getCreateList() {
     //Создаю новый блок list
     const id = getRandomId()
@@ -43,6 +48,9 @@ function getCreateList() {
     container.appendChild(list)
 
     //Создаю новый блок 
-
+    list.addEventListener('click', function() {
+        alert('click!')
+    });
 
 }
+
