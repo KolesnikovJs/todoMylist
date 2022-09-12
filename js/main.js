@@ -49,7 +49,11 @@ function getCreateList() {
 
     //Создаю новый блок 
     list.addEventListener('click', function() {
-        alert('click!')
+        list.style.background = '#FF6A55';
+        list.style.color = '#FFFFFF'
+        const listItem = document.createElement('div');
+        listItem.className = 'list-item'
+        list.appendChild(listItem);
     });
 
 }
